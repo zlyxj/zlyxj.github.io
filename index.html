@@ -6,14 +6,14 @@
     <script>
       function getmatter()
         {
-          if(zlyxjmt>0)
+          if(!(zlyxjmt>0))
           {
-            zlyxjmt += 1
+            var zlyxjmt = 1
             document.getElementById("uselessmatter").innerHTML="你有" + zlyxjmt + "增量游戏君物质。"
           }
           else
           {
-            var zlyxjmt=1
+            zlyxjmt += 1
             document.getElementById("uselessmatter").innerHTML="你有" + zlyxjmt + "增量游戏君物质。"
           }
           
